@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="25" bottomMargin="25" uuid="fde9505f-6182-4c42-b82d-4b29f81d9183">
+	<property name="ireport.zoom" value="0.9090909090909091"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="KK" uuid="b48d3261-5c66-42c9-8b97-0408abbbb28c">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     karyawan_kontrak.`NIK` AS karyawan_kontrak_NIK,
+     karyawan_kontrak.`Nama` AS karyawan_kontrak_Nama,
+     karyawan_kontrak.`Email` AS karyawan_kontrak_Email,
+     karyawan_kontrak.`NoTelp` AS karyawan_kontrak_NoTelp,
+     karyawan_kontrak.`Alamat` AS karyawan_kontrak_Alamat,
+     karyawan_kontrak.`Kode_Jabatan` AS karyawan_kontrak_Kode_Jabatan,
+     karyawan_kontrak.`Tanggal_Masuk` AS karyawan_kontrak_Tanggal_Masuk,
+     karyawan_kontrak.`Tanggal_Habis_Kontrak` AS karyawan_kontrak_Tanggal_Habis_Kontrak
+FROM
+     `karyawan_kontrak` karyawan_kontrak]]>
+		</queryString>
+		<field name="karyawan_kontrak_NIK" class="java.lang.String"/>
+		<field name="karyawan_kontrak_Nama" class="java.lang.String"/>
+		<field name="karyawan_kontrak_Email" class="java.lang.String"/>
+		<field name="karyawan_kontrak_NoTelp" class="java.lang.String"/>
+		<field name="karyawan_kontrak_Alamat" class="java.lang.String"/>
+		<field name="karyawan_kontrak_Kode_Jabatan" class="java.lang.String"/>
+		<field name="karyawan_kontrak_Tanggal_Masuk" class="java.sql.Date"/>
+		<field name="karyawan_kontrak_Tanggal_Habis_Kontrak" class="java.sql.Date"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     karyawan_kontrak.`NIK` AS karyawan_kontrak_NIK,
+     karyawan_kontrak.`Nama` AS karyawan_kontrak_Nama,
+     karyawan_kontrak.`Email` AS karyawan_kontrak_Email,
+     karyawan_kontrak.`NoTelp` AS karyawan_kontrak_NoTelp,
+     karyawan_kontrak.`Alamat` AS karyawan_kontrak_Alamat,
+     karyawan_kontrak.`Kode_Jabatan` AS karyawan_kontrak_Kode_Jabatan,
+     karyawan_kontrak.`Tanggal_Masuk` AS karyawan_kontrak_Tanggal_Masuk,
+     karyawan_kontrak.`Tanggal_Habis_Kontrak` AS karyawan_kontrak_Tanggal_Habis_Kontrak
+FROM
+     `karyawan_kontrak` karyawan_kontrak]]>
+	</queryString>
+	<field name="karyawan_kontrak_NIK" class="java.lang.String"/>
+	<field name="karyawan_kontrak_Nama" class="java.lang.String"/>
+	<field name="karyawan_kontrak_Email" class="java.lang.String"/>
+	<field name="karyawan_kontrak_NoTelp" class="java.lang.String"/>
+	<field name="karyawan_kontrak_Alamat" class="java.lang.String"/>
+	<field name="karyawan_kontrak_Kode_Jabatan" class="java.lang.String"/>
+	<field name="karyawan_kontrak_Tanggal_Masuk" class="java.sql.Date"/>
+	<field name="karyawan_kontrak_Tanggal_Habis_Kontrak" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="170" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="735f9b04-9ba4-4b7d-b978-ac39f898050c" x="295" y="49" width="319" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[P. +6221 522 9909 | F. +6221 522 9777]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="37ed6bb7-49f4-43be-b6a5-fbf7f4b708ae" x="295" y="0" width="319" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[PT. ANABATIC TECHNOLOGIES]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="f55c29a2-98d7-49af-849d-b3b2e4dc191a" x="147" y="0" width="117" height="77"/>
+				<imageExpression><![CDATA["D:\\Documents\\KKP\\Anabatic\\KP_Anabatic_Texhnologies\\KKP_Anabatic_Technologies\\src\\icon\\logo-anabatic-lg 1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="3f418608-a920-47db-93ef-ed396cb88f1c" x="295" y="32" width="319" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Jl. Jend Gatot Subroto Kav. 23, Jakarta 12930, Indonesia]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="b5fa7a17-07d7-40a4-8211-806cd1a9aece" x="0" y="93" width="802" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="ac060c69-a410-4660-8a6d-b808bf56049f" x="0" y="121" width="802" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Karyawan Kontrak]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="127" splitType="Stretch">
+			<componentElement>
+				<reportElement uuid="83eb5177-122f-49af-bd6a-da2ef35ff795" key="table" style="table" x="0" y="0" width="802" height="127"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="KK" uuid="a30f2f31-b3f3-48a4-b75e-52c92479578f">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="59" uuid="88cf088d-cfb6-4832-b163-1e2fc6bd8ab5">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="06db4513-29fa-40a5-8d6d-48194450f594" x="0" y="0" width="59" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NIK]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="cb6921fc-f790-4dd9-ad72-0bcb94307c50" x="3" y="0" width="53" height="20"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_NIK}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="150" uuid="a9b53654-c25a-440c-8a8b-61bfc15b16e8">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="b0c97b63-f363-4f92-b7a2-2d13affd30d1" x="0" y="0" width="150" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Nama]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="6ce83306-fdde-4cb5-b135-133ed65c387d" x="3" y="0" width="144" height="20"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_Nama}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="98" uuid="7eac54ca-f517-460f-ae45-e30ef9dbbec6">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="25fb359e-a1b9-453e-8163-245477683fb2" x="0" y="0" width="98" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Email]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="b8f4eb78-b91f-43ff-8602-29ad6d386213" x="3" y="0" width="92" height="20"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_Email}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="87" uuid="4862904d-0340-4d79-945a-b96f7ba269cf">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="436df8b8-0166-4e41-983a-c25637e756c0" x="0" y="0" width="87" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[No Telp]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="8ecd08aa-e657-491a-be55-db9a1fee503a" x="3" y="0" width="81" height="20"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_NoTelp}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="97" uuid="c2c8a99f-5225-488f-893a-1718e488424a">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="25677bc8-fe5b-4543-9394-02319bf84b87" x="0" y="0" width="97" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Alamat]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="a73fbfcf-5c1c-4264-8b22-716ad35216c7" x="3" y="0" width="91" height="20"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_Alamat}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="d7d6cb1d-3528-4b30-8944-d8032c0410c2">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="1579a9cd-4a66-47d2-a4fc-48aa1d1af83b" x="0" y="0" width="100" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Kode Jabatan]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="f79d7b98-96bc-447b-9877-c5bc6c9891bc" x="3" y="0" width="94" height="20"/>
+								<textElement verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_Kode_Jabatan}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="108" uuid="98267215-2edd-411e-b7db-fb4ecbfdc998">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="96e01746-4a29-4c85-848f-16fee672e343" x="0" y="0" width="108" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Tanggal Masuk]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="b71380db-f7ab-4bfe-ba1b-c587a1d1ad43" x="29" y="0" width="50" height="20"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_Tanggal_Masuk}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="108" uuid="7710734d-ad12-44ec-913b-84fd6cbdc46f">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement uuid="c8e3f5e4-fb79-4c1d-936f-afb5a56eac70" x="0" y="0" width="108" height="30"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Tanggal Keluar]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement uuid="4899b164-03e1-4593-9ff0-271cad0d5608" x="28" y="0" width="50" height="20"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{karyawan_kontrak_Tanggal_Habis_Kontrak}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="145" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a2a5445c-069a-4d18-a70a-53dff2134aad" x="641" y="19" width="49" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d3df622d-b56f-4364-94eb-b1ccce38710f" x="625" y="113" width="177" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sofa Muzdalifah]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="bc17ea31-476d-4147-8416-c28bf9a10038" x="690" y="19" width="112" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

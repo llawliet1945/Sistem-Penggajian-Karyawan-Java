@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="032ada4b-09c6-4d36-ac1b-2c09624734cd">
+	<property name="ireport.zoom" value="2.357947691000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="31"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="SGKT" uuid="50d04e54-cd9a-4db0-8f74-2b69e41e7a64">
+		<queryString>
+			<![CDATA[SELECT
+     slip_gaji_karyawan_tetap.`Kode_Slip` AS slip_gaji_karyawan_tetap_Kode_Slip,
+     slip_gaji_karyawan_tetap.`Username_Admin` AS slip_gaji_karyawan_tetap_Username_Admin,
+     slip_gaji_karyawan_tetap.`Tanggal_Slip` AS slip_gaji_karyawan_tetap_Tanggal_Slip,
+     slip_gaji_karyawan_tetap.`NIK` AS slip_gaji_karyawan_tetap_NIK,
+     slip_gaji_karyawan_tetap.`Nama` AS slip_gaji_karyawan_tetap_Nama,
+     slip_gaji_karyawan_tetap.`Kode_Jabatan` AS slip_gaji_karyawan_tetap_Kode_Jabatan,
+     slip_gaji_karyawan_tetap.`Gaji_Pokok` AS slip_gaji_karyawan_tetap_Gaji_Pokok,
+     slip_gaji_karyawan_tetap.`Jumlah_Absen` AS slip_gaji_karyawan_tetap_Jumlah_Absen,
+     slip_gaji_karyawan_tetap.`Total_Gaji` AS slip_gaji_karyawan_tetap_Total_Gaji
+FROM
+     `slip_gaji_karyawan_tetap` slip_gaji_karyawan_tetap]]>
+		</queryString>
+		<field name="slip_gaji_karyawan_tetap_Kode_Slip" class="java.lang.String"/>
+		<field name="slip_gaji_karyawan_tetap_Username_Admin" class="java.lang.String"/>
+		<field name="slip_gaji_karyawan_tetap_Tanggal_Slip" class="java.sql.Date"/>
+		<field name="slip_gaji_karyawan_tetap_NIK" class="java.lang.String"/>
+		<field name="slip_gaji_karyawan_tetap_Nama" class="java.lang.String"/>
+		<field name="slip_gaji_karyawan_tetap_Kode_Jabatan" class="java.lang.String"/>
+		<field name="slip_gaji_karyawan_tetap_Gaji_Pokok" class="java.lang.Integer"/>
+		<field name="slip_gaji_karyawan_tetap_Jumlah_Absen" class="java.lang.Integer"/>
+		<field name="slip_gaji_karyawan_tetap_Total_Gaji" class="java.lang.Integer"/>
+	</subDataset>
+	<parameter name="Kode" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT *
+FROM
+     slip_gaji_karyawan_tetap
+WHERE Kode_Slip = $P{Kode}]]>
+	</queryString>
+	<field name="Kode_Slip" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Username_Admin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_Slip" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kode_Jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gaji_Pokok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jumlah_Absen" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total_Gaji" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<filterExpression><![CDATA[new Boolean(true)]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3f418608-a920-47db-93ef-ed396cb88f1c" x="101" y="32" width="605" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Jl. Jend Gatot Subroto Kav. 23, Jakarta 12930, Indonesia]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="f55c29a2-98d7-49af-849d-b3b2e4dc191a" x="101" y="0" width="117" height="77"/>
+				<imageExpression><![CDATA["D:\\Documents\\KKP\\Anabatic\\KP_Anabatic_Texhnologies\\KKP_Anabatic_Technologies\\src\\icon\\logo-anabatic-lg 1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="37ed6bb7-49f4-43be-b6a5-fbf7f4b708ae" x="101" y="0" width="605" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[PT. ANABATIC TECHNOLOGIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="735f9b04-9ba4-4b7d-b978-ac39f898050c" x="101" y="49" width="605" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[P. +6221 522 9909 | F. +6221 522 9777]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="edae0d66-58cc-4ed2-a9af-b3b2bf34e199" x="1" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="edae0d66-58cc-4ed2-a9af-b3b2bf34e199" x="1" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="0fb47f08-2055-4d5b-ac4b-b62815fbb059" x="101" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="30950642-cba5-4ddc-b932-30849c0dbffb" x="101" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="c323ed13-f2ac-471d-a1aa-982719d58cd7" x="201" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="ac31128d-09e9-4223-b27a-90331335c846" x="201" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fefa0277-14c8-45c4-a2bb-5fde4764dd94" x="301" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="bb6f73df-b269-48dc-9037-61e3e5083957" x="301" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9bc96738-4141-492e-a7d1-bb5129c574d2" x="401" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="423d9a6b-61e6-45f7-b830-e4d15b1fd0c8" x="501" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d2006bf3-3393-4cc2-8378-b75060c0f040" x="601" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="0c500527-e6c7-4d7f-8101-acb34c6629f2" x="701" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="8faec4bf-6dc6-4b0e-ba27-37249953a7df" x="401" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="53267499-cece-488b-893c-dca366c5188d" x="501" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="ffcfbf8d-b126-4c42-b210-98ea2e7d5ad7" x="601" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="c3340fe0-c426-4114-8d33-969ea83d0edd" x="701" y="21" width="100" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="695b6ee3-a640-4419-b754-d3101c506bc3" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kode_Slip]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d1e8c921-1ac6-4d6d-94ed-e2e4a5e4c342" x="1" y="21" width="99" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Kode_Slip}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e67a5512-9f8f-4be9-a1d2-5cd809e825b8" x="100" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Username_Admin]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="2c9f0560-8ddc-41e9-b7b5-04cf8b7e1582" x="100" y="20" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Username_Admin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="563fa790-d3f0-4829-9265-3dddf6aa9d0e" x="201" y="1" width="99" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tanggal_Slip]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="0f7799e5-d795-4a76-bff1-f8709e508c21" x="201" y="20" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tanggal_Slip}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8e5f13d0-407c-4520-90b2-7f74c5a815b2" x="301" y="1" width="99" height="20"/>
+				<textElement/>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="016ba70a-8bf5-49c0-b4bb-cdfcf32a4f4f" x="301" y="20" width="99" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{NIK}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="585907d0-7762-4874-a0d3-39297e1402ca" x="402" y="1" width="98" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="aa55ef66-0004-4366-a0ba-0ec407bf6792" x="403" y="21" width="98" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="605bf095-b848-450e-969c-70d09f678b71" x="501" y="1" width="99" height="20"/>
+				<textElement/>
+				<text><![CDATA[Gaji_Pokok]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="41ea5f01-2071-41b3-a220-fea61f9eba73" x="501" y="20" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Gaji_Pokok}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="465207bd-f51f-4500-9a22-d18dc3a1a196" x="601" y="1" width="99" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jumlah_Absen]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c3c96868-63ae-4e9d-825b-7714f89487b0" x="600" y="20" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Jumlah_Absen}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="bea7be21-fc9d-414e-9689-bd60e6f9310f" x="700" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Total_Gaji]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="44480de9-df3d-4ece-80a2-46a6d953cb7b" x="700" y="23" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Total_Gaji}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

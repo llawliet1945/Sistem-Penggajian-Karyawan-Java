@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="05ae9d32-62a1-44ba-9b47-9578a9101087">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Kode" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM slip_thr_karyawan_tetap where Kode_Slip = $P{Kode}]]>
+	</queryString>
+	<field name="Kode_Slip" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Username_Admin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_Slip" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kode_Jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gaji_Pokok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total_THR" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="102" splitType="Stretch">
+			<image>
+				<reportElement uuid="f55c29a2-98d7-49af-849d-b3b2e4dc191a" x="100" y="0" width="117" height="77"/>
+				<imageExpression><![CDATA["D:\\Documents\\KKP\\Anabatic\\KP_Anabatic_Texhnologies\\KKP_Anabatic_Technologies\\src\\icon\\logo-anabatic-lg 1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="735f9b04-9ba4-4b7d-b978-ac39f898050c" x="100" y="49" width="605" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[P. +6221 522 9909 | F. +6221 522 9777]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f418608-a920-47db-93ef-ed396cb88f1c" x="100" y="32" width="605" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Jl. Jend Gatot Subroto Kav. 23, Jakarta 12930, Indonesia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="37ed6bb7-49f4-43be-b6a5-fbf7f4b708ae" x="100" y="0" width="605" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[PT. ANABATIC TECHNOLOGIES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="6853aeaf-5b95-410a-9f8e-34265ddd87aa" x="0" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7108ff54-a9ef-4f69-8e3f-99b6fd7b2626" x="100" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d15f7c07-67ab-4276-bded-1f087df83768" x="200" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e9958eea-1797-4efc-82f3-788e940b6059" x="300" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="1716d5e2-c32f-4421-97ff-4ef79d301283" x="400" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="22bae452-9ed0-4a78-9a1b-a509882a29a3" x="500" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5b013206-0e9f-44e8-b299-cdbfc1c797ed" x="600" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="dfc66182-399b-4e22-9a8c-9236afee37d9" x="700" y="1" width="100" height="20" backcolor="#CCFFCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="ce74ad36-c0a5-476b-9cfb-aafc72f3861f" x="700" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="98e9e02d-5dc2-4ef3-bee6-a121f2351b2a" x="600" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="4a13eaab-2e33-4ff8-bda4-1b0830afbf34" x="500" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="2ead4877-ea93-48f1-82ea-619ffc324d06" x="400" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9694b1af-83e8-496a-b750-954c2eb46437" x="300" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="bbd3833e-a633-4504-8ffe-bb912e5fa820" x="200" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="95f15424-9f7b-41bc-b316-3bf8d92c5441" x="100" y="21" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="0f8edd56-cfd5-4a25-b62f-8de48135c15b" x="0" y="21" width="100" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="1d2d701a-be96-4b66-b4f5-94d0082e55b7" x="100" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Username_Admin]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="877b1a75-1542-45c5-8fa8-cc8eb0ec5516" x="100" y="22" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Username_Admin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d189c83f-0b9c-43fa-9bde-3637cfca46e1" x="0" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kode_Slip]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="09bb788f-ed78-4ed9-b4a2-02e39e2ac9c4" x="0" y="22" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Kode_Slip}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b7e8364e-20f1-4e63-baa4-fec5d135a98a" x="200" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tanggal_Slip]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7c58b7b1-777e-4a8c-9108-49ff0b6ef4b2" x="201" y="22" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tanggal_Slip}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="72081a79-519b-4622-993f-b30fcdb4a407" x="301" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6dfffa04-6bfd-4dc8-ba94-05dfbb5b3fc8" x="300" y="22" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{NIK}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="545c2558-2a08-44c3-9793-9121ec71f32e" x="401" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7a014ec1-5c17-4eb3-a947-8ac6d1286dd1" x="401" y="22" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f378ee7f-4847-4a6d-b64d-063707cd8ab8" x="501" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kode_Jabatan]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="bb64a12f-0ccc-41fe-b04c-07d1bfab7de1" x="501" y="22" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Kode_Jabatan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1731cc1a-5866-4ea2-ad07-2d79b06507c4" x="601" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Gaji_Pokok]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="8ef1e4ea-3859-4955-be8e-3bbe18032cf2" x="601" y="21" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Gaji_Pokok}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c9965da8-b76e-4a03-8a95-6ff6076e912b" x="700" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Total_THR]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="52f7e7f2-ff3c-4842-b5eb-51cdcd84c3b1" x="701" y="21" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Total_THR}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="172" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
